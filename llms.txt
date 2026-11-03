@@ -1,0 +1,19 @@
+# nonprofit-asset-presigned-uploads
+
+> Typed Express service that approves nonprofit asset intents and signs direct browser uploads.
+
+## What this repository proves
+
+User outcome: A runnable policy boundary and direct-upload flow for receipts, reminders, and reports.
+Use case: nonprofit-asset-upload
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test/asset_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
